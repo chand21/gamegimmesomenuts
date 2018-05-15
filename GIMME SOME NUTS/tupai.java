@@ -18,6 +18,12 @@ public class tupai extends Actor
             MouseInfo mouse = Greenfoot.getMouseInfo();
             setLocation(mouse.getX(), mouse.getY());
         }
-    
+       kacang a= (kacang)getOneIntersectingObject(kacang.class);
+       if (a!=null)
+       {
+           
+           getWorld().removeObject(a);
+           return;
+       }
     }    
 }
