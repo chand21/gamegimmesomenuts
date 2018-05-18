@@ -21,6 +21,7 @@ public class tupai extends Actor
        kacang a= (kacang)getOneIntersectingObject(kacang.class);
        if (a!=null)
        {
+           ((MyWorld)getWorld()).tambahNilai();
            
            getWorld().removeObject(a);
            return;

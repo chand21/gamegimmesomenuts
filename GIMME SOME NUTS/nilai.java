@@ -1,21 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class counter here.
+ * Write a description of class nilai here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class counter extends Actor
+public class nilai extends Actor
 {
     /**
-     * Act - do whatever the counter wants to do. This method is called whenever
+     * Act - do whatever the nilai wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        
-    }   
-    
-    
+        // Add your action code here.
+    }    
 }
