@@ -44,8 +44,9 @@ public class MyWorld extends World
             addObject(new bomb(), Greenfoot.getRandomNumber(100), 10);
         }
     }
-    public void tambahNilai()
+    counter skor = new counter("Skor :");
+     public void tambahNilai()
     {
-        
+      skor.tambahNilai1);
     }
 }
