@@ -46,6 +46,6 @@ public class MyWorld extends World
     }
      public void tambahNilai()
     {
-       skor.tambah(1);
+        
     }
 }
