@@ -17,7 +17,7 @@ public class MyWorld extends World
     
     public MyWorld()
     {    
-        // Create a new world with 800x600 cells with a cell size of 1x1 pixels.
+        
         super(800, 600, 1); 
         setPaintOrder(counter.class, tupai.class, kacang.class);
         
@@ -38,12 +38,13 @@ public class MyWorld extends World
     public void act()
     {
         if(Greenfoot.getRandomNumber(100)<1){       //agar dapat kacang secara random
-            addObject(new kacang(), Greenfoot.getRandomNumber(70), 10);
+            addObject(new kacang(), Greenfoot.getRandomNumber(70), 15);
         }
         if(Greenfoot.getRandomNumber(990)<1){       //random bomb
             addObject(new bomb(), Greenfoot.getRandomNumber(100), 10);
         }
     }
+    counter skor = new counter();
      public void tambahNilai()
     {
         

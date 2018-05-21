@@ -22,6 +22,7 @@ public class tupai extends Actor
        if (a!=null)
        {
            ((MyWorld)getWorld()).tambahNilai();
+           
            getWorld().removeObject(a);
            return;
        }
