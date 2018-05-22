@@ -15,6 +15,7 @@ public class MyWorld extends World
      * 
      */
     
+    
     public MyWorld()
     {    
         
@@ -24,29 +25,29 @@ public class MyWorld extends World
         addObject(new tupai(), 200,500);
         addObject(new kacang(), 500, 30);
         addObject(new bomb(), 400, 40);
-        addObject(new skor(),90, 30);
+        
+        skor skor = new skor();
         
         
     }
     private void siap()
     {
-        counter counter = new counter();
+        counter counter = new counter("");
         addObject (counter,90, 30);
-        skor skor = new skor();
         addObject (skor,95, 30);
     }
     public void act()
     {
         if(Greenfoot.getRandomNumber(100)<1){       //agar dapat kacang secara random
-            addObject(new kacang(), Greenfoot.getRandomNumber(70), 15);
+            addObject(new kacang(), Greenfoot.getRandomNumber(700), 15);
         }
         if(Greenfoot.getRandomNumber(990)<1){       //random bomb
-            addObject(new bomb(), Greenfoot.getRandomNumber(100), 10);
+            addObject(new bomb(), Greenfoot.getRandomNumber(200), 20);
         }
     }
-    counter skor = new counter();
+    counter skor = new counter("");
      public void tambahNilai()
     {
-        
+        skor.tambah(10);
     }
 }
